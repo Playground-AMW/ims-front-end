@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Details</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="module" src="js/teacher.js"></script>
+</head>
+
+<body class="container-fluid p-0 d-flex flex-column vh-100">
+    <header class="text-center border-bottom border-primary">
+        <h1>
+            <i class="bi bi-person-add text-primary"></i>
+            Teacher Registration System</h1>
+    </header>
+    <main class="container flex-grow-1">
+        <div class="row col-sm justify-content-evenly">
+            <div class="p-2 col-md-4">
+                <form action="#">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="button" class="add btn btn-outline-primary">Add New Teacher</button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-id" class="form-label">Teacher's ID:</label>
+                        <input type="text" class="form-control" id="txt-id" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-name" class="form-label">Teacher's Name:</label>
+                        <input type="text" class="form-control" id="txt-name"placeholder="Ex: Kasun Sampath">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-contact" class="form-label">Teacher's contact:</label>
+                        <input type="text" class="form-control" id="txt-contact" placeholder="Ex: No.63, Grase Peris Road, Panadura">
+                    </div>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="save btn btn-outline-success">SAVE</button>
+                        <button type="button" class="clear btn btn-outline-warning">CLEAR</button>
+                    </div>
+                </form>
+            </div>
+            <div class="p-2 col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Contact</th>
+                            <th scope="col">Option</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center border-top p-2">
+        Copyright &copy; 2023 DEP-11. All Rights Reserved.
+    </footer>
+</body>
+</html>
